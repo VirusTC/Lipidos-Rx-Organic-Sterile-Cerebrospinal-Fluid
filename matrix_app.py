@@ -38,7 +38,7 @@ class PolysaccharideMatrixApp:
         title_label.pack()
         subtitle_label = tk.Label(
             header_frame, 
-            text="Amylopectin Acid-Hydrolysis & Phytosterol Transport Reference", 
+            text="Amylopectin Citrus-Hydrolysis & Phytosterol Transport Reference", 
             font=("Arial", 9, "italic"), 
             fg="#C8E6C9", 
             bg="#1E4620"
@@ -59,7 +59,7 @@ class PolysaccharideMatrixApp:
         self.mass_entry.insert(0, "100.0")
 
         # Medium pH
-        ttk.Label(input_group, text="Citric Medium pH:").grid(row=1, column=0, sticky="w", pady=4)
+        ttk.Label(input_group, text="Citrus Matrix pH:").grid(row=1, column=0, sticky="w", pady=4)
         self.ph_entry = ttk.Entry(input_group, width=12)
         self.ph_entry.grid(row=1, column=1, padx=5, pady=4)
         self.ph_entry.insert(0, "2.8")
@@ -186,7 +186,7 @@ class PolysaccharideMatrixApp:
                 f" [RAW CONSTITUENT DATA INGESTION]\n"
                 f"  * Base Polysaccharide Solid Mass : {mass:.2f} Grams\n"
                 f"  * Calculated Hydronium Pool [H3O+]: {h3o_conc:.6f} mol/L (Based on pH {ph:.2f})\n"
-                f"  * Organic Acid Saturation Window : {hours:.1f} Hours\n"
+                f"  * Citrus Matrix Saturation Window : {hours:.1f} Hours\n"
                 f"  * Active Steroidal Phytosterols  : {exudate_mg:.1f} mg (Target Structural Component)\n\n"
                 f" --------------------------------------------------------------------------------------\n"
                 f"  TRANSFORMATION METRIC                    | MATRIX SIMULATION VALUES                  \n"
